@@ -1,23 +1,4 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Engineer: Amir Muallim
-// 
-// Create Date: 21.05.2025 21:24:32
-// Design Name: 
-// Module Name: input_selection
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
-
 
 module input_selection(
     input [1:0] input_ctl,
