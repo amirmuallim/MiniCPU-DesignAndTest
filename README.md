@@ -1,0 +1,65 @@
+# MiniCPU-DesignAndTest
+
+A Verilog-based project for designing and testing a simple Mini CPU. This repository contains the RTL implementation of a basic CPU architecture, along with associated testbenches and scripts for simulation and verification.
+
+## Features
+
+- Written primarily in Verilog (93.3%)
+- Includes Makefile scripts (6.7%) for building and simulating designs
+- Modular CPU design suitable for educational purposes
+- Testbenches for functional verification
+
+## Directory Structure
+
+```
+.
+├── rtl/            # Verilog source files for Mini CPU components
+├── tb/      # Testbenches for simulation and verification
+├── sim        # Build and simulation automation
+└── README.md       # Project documentation
+```
+
+## Getting Started
+
+### Prerequisites
+
+- Verilog simulator (e.g., Icarus Verilog, ModelSim, or Vivado)
+- GNU Make
+
+### Build and Run
+
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/amirmuallim/MiniCPU-DesignAndTest.git
+    cd MiniCPU-DesignAndTest
+    ```
+
+2. Build and simulate using Make:
+    ```sh
+    make
+    ```
+
+   This will compile the Verilog files and run the included testbenches.
+
+3. To clean build artifacts:
+    ```sh
+    make clean
+    ```
+
+## Project Structure
+
+- `rtl/`: Contains the Verilog modules for the CPU, including ALU, control unit, register files, and more.
+- `tb/`: Testbenches used to validate the functionality of the CPU modules.
+- `sim`: Automates the build and simulation process.
+
+## Contributing
+
+Contributions, issues, and feature requests are welcome! Please open a pull request or submit an issue via the Issues tab.
+
+## License
+
+This project is licensed under the MIT License.
+
+## Author
+
+Created and maintained by [amirmuallim](https://github.com/amirmuallim).
