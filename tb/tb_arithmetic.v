@@ -1,0 +1,76 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 31.05.2025 17:29:48
+// Design Name: 
+// Module Name: tb_arithmetic_unit
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
+
+module tb_arithmetic_unit;
+
+reg signed [7:0] left, right;
+reg f;
+wire signed [7:0] result;
+
+arithmetic_unit DUT(left,
+	right, 
+	f,
+	result);
+
+task add(input signed [7:0] a, input signed [7:0] b);
+	begin
+	f = 0;
+	left = a;
+	right = b;
+
+	#1;
+	if(result == (a+b))
+		$display("ADD SUCCESS, %d + %d = %d", a, b, result);
+	else
+		$display("ADD FAILURE, %d + %d = %d", a, b, result);
+end
+endtask
+
+task sub(input signed [7:0] a, input signed [7:0] b);
+	begin
+	f = 1;
+	left = a;
+	right = b;
+	#1;
+	if(result == (a-b))
+		$display("SUB SUCCESS, %d - %d = %d", a, b, result);
+	else
+		$display("SUB FAILURE, %d - %d = %d", a, b, result);
+end
+endtask
+
+// add(a,b)
+// sub(a,b)
+// a,b -> can be signed integers
+
+
+initial begin
+
+	add(5,7);
+	sub(3,2);
+	add(4,-2);
+	add(22,5);
+	sub(32,-4);
+	sub(5,7);
+end
+
+endmodule
