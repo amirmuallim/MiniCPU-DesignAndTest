@@ -31,7 +31,7 @@ A Verilog-based project for designing and testing a simple Mini CPU. This reposi
 1. Clone the repository:
     ```sh
     git clone https://github.com/amirmuallim/MiniCPU-DesignAndTest.git
-    cd MiniCPU-DesignAndTest
+    cd MiniCPU-DesignAndTest/sim
     ```
 
 2. Build and simulate using Make:
