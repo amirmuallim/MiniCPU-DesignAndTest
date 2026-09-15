@@ -1,6 +1,7 @@
 `timescale 1ns / 1ps
 
-module register_bank(input clk,
+module register_bank(
+	input clk,
 	input signed [7:0] reg_in,
 	input write_reg,
 	input [3:0] k,

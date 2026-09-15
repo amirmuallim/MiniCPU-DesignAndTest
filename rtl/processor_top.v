@@ -1,6 +1,7 @@
 `timescale 1ns / 1ps
 
-module processor_top(input clk,
+module processor_top(
+	input clk,
 	input rst,
 
 	input signed [7:0] IN0,

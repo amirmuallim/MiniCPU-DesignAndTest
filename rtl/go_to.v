@@ -1,6 +1,7 @@
 `timescale 1ns / 1ps
 
-module go_to(input clk,
+module go_to(
+	input clk,
 	input rst,
 	input [3:0] numb_sel,
 	input signed [7:0] data,
