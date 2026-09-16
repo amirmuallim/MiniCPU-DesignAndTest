@@ -12,8 +12,6 @@ module register_bank(
 
 reg signed [7:0] mem [15:0];
 
-reg signed [7:0] lo, ro;
-
 always @(posedge clk)
 begin
 	if(write_reg)
