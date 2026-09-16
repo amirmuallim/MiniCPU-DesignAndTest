@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 
-module tb_goto;
+module tb_go_to;
 
 reg clk = 1'b0,rst;
 reg [3:0] numb_sel;
@@ -149,7 +149,7 @@ endtask
 initial begin
 
     $dumpfile("go_to.vcd");
-	$dumpvars(0, tb_got_to);
+	$dumpvars(0, tb_go_to);
 	reset();
 	repeat(4)
 	begin

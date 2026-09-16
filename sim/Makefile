@@ -43,7 +43,7 @@ arith:
 go_to:
 	$(IVERILOG) -g2012 -o sim_go_to.out $(RTL_DIR)/go_to.v $(TB_DIR)/tb_go_to.v
 	$(VVP) sim_go_to.out
-	@echo "Run 'make view-go_to' to view $(WAVEDIR)/tb_go_to.vcd"
+	@echo "Run 'make view-go_to' to view $(WAVEDIR)/go_to.vcd"
 
 input_sel:
 	$(IVERILOG) -g2012 -o sim_input_sel.out $(RTL_DIR)/input_selection.v $(TB_DIR)/tb_input_selection.v
