@@ -59,7 +59,7 @@ MiniCPU-DesignAndTest/
 
 The MiniCPU employs a simplified datapath architecture designed for educational purposes and efficient instruction execution:
 
-![MiniCPU Datapath Architecture](./block_diagrams/block-diagram.png)
+![MiniCPU Datapath Architecture](./block_diagrams/cpu_datapath_arch.png)
 
 The datapath integrates key CPU components including the instruction fetch unit, decoder, ALU, registers, and memory interfaces to execute a complete instruction cycle. Additional architectural details can be found in the `block_diagrams/` directory.
 
