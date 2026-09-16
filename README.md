@@ -1,6 +1,6 @@
 # MiniCPU-DesignAndTest
 
-A Verilog-based project for designing and testing a simple Mini CPU. This repository contains the RTL implementation of a basic CPU architecture, along with associated testbenches and scripts for simulation and verification.
+A Verilog-based project for designing and testing a simple Mini CPU. This repository contains the RTL implementation of a basic CPU architecture, along with associated testbenches and scripts for simulation.
 
 ## Features
 
@@ -12,11 +12,20 @@ A Verilog-based project for designing and testing a simple Mini CPU. This reposi
 ## Directory Structure
 
 ```
-.
-├── rtl/            # Verilog source files for Mini CPU components
-├── tb/      # Testbenches for simulation and verification
-├── sim        # Build and simulation automation
-└── README.md       # Project documentation
+MiniCPU-DesignAndTest/
+├── rtl/                      # Verilog RTL source files for CPU components
+├── tb/                       # Testbenches for simulation and verification
+├── sim/                      # Build and simulation automation scripts
+├── block_diagrams/           # Block diagrams and architecture visualizations
+│   ├── block-diagram.png        # Overall CPU block diagram
+│   ├── processor_top.png        # Top-level processor architecture
+│   ├── arithmetic_unit.png      # ALU architecture
+│   ├── register_bank.png        # Register file design
+│   ├── input_selection.png      # Input multiplexer logic
+│   ├── output_selection.png     # Output multiplexer logic
+│   └── go_to.png                # Branch/Jump control logic
+├── BUG_LOG.md                # Known issues and bug tracking
+└── README.md                 # Project documentation
 ```
 
 ## Getting Started
@@ -46,11 +55,13 @@ A Verilog-based project for designing and testing a simple Mini CPU. This reposi
     make clean
     ```
 
-## Project Structure
+## Datapath Architecture
 
-- `rtl/`: Contains the Verilog modules for the CPU, including ALU, control unit, register files, and more.
-- `tb/`: Testbenches used to validate the functionality of the CPU modules.
-- `sim`: Automates the build and simulation process.
+The MiniCPU employs a simplified datapath architecture designed for educational purposes and efficient instruction execution:
+
+![MiniCPU Datapath Architecture](./block_diagrams/block-diagram.png)
+
+The datapath integrates key CPU components including the instruction fetch unit, decoder, ALU, registers, and memory interfaces to execute a complete instruction cycle. Additional architectural details can be found in the `block_diagrams/` directory.
 
 ## Contributing
 
