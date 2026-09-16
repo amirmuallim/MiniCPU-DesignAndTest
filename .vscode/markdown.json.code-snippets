@@ -1,0 +1,35 @@
+{
+  "Bug Log Entry": {
+    "prefix": "buglog",
+    "body": [
+      "## 🐞 Bug - [$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE] ${1|[open],[in progress],[closed]|}",
+      "",
+      "**File:** `${2:relative/path/to/file}`",
+      "",
+      "**Description:**",
+      "> ${3:Short summary of the issue}",
+      "",
+      "**Expected behavior:**",
+      "> ${4:Expected outcome}",
+      "",
+      "**Actual behavior:**",
+      "> ${5:Actual outcome}",
+      "",
+      "**Root Cause:**",
+      "> ${6:Root cause}",
+      "",
+      "**Old Code:**",
+      "```verilog",
+      "${7:// Existing code snippet that had the bug}",
+      "```",
+      "",
+      "**New Code (Fix):**",
+      "```verilog",
+      "${8:// Updated code snippet after fixing the bug}",
+      "```",
+      "",
+      "---"
+    ],
+    "description": "Insert a bug log entry with file name, old and new code sections"
+  }
+}
