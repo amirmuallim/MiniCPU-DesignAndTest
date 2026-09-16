@@ -147,6 +147,9 @@ endtask
 // d is data
 
 initial begin
+
+    $dumpfile("go_to.vcd");
+	$dumpvars(0, tb_got_to);
 	reset();
 	repeat(4)
 	begin

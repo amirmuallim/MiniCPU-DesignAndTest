@@ -83,6 +83,9 @@ endtask
 // operation(i, j);
 //
 initial begin
+
+	$dumpfile("register_bank.vcd");
+	$dumpvars(0, tb_register_bank);
 	for(m = 0; m < 16; m = m+1)
 	begin
 		assign_value(m);

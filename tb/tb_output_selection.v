@@ -207,6 +207,9 @@ end
 */
 
 initial begin
+
+	$dumpfile("output_selection.vcd");
+	$dumpvars(0, tb_output_selection);
     // Initialize
     out_en  = 0;
     out_sel = 0;

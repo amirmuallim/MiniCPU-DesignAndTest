@@ -108,6 +108,9 @@ module tb_input_selection;
     endtask
 	
     initial begin
+
+		$dumpfile("input_selection.vcd");
+		$dumpvars(0, tb_input_selection);
 	    // checking assign value
 	    const = 8'd10;
 	    assign_value(const);

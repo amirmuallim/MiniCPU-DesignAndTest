@@ -44,6 +44,8 @@ endtask
 
 
 initial begin
+	$dumpfile("arithmetic_unit.vcd");
+	$dumpvars(0, tb_arithmetic);
 
 	add(5,7);
 	sub(3,2);
