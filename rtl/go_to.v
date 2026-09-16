@@ -6,7 +6,8 @@ module go_to(
 	input [3:0] numb_sel,
 	input signed [7:0] data,
 	input [7:0] N,
-	output reg [7:0] number);
+	output reg [7:0] number
+);
 
 always @(posedge clk)
 begin
